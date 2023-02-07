@@ -1,16 +1,12 @@
-import "normalize.css";
-import "./index.css";
-import React from "react";
-import ReactDOM from "react-dom/client";
-import Cardapio from "./pages/Cardapio";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import 'normalize.css';
+import './index.css';
+import Cardapio from './pages/Cardapio';
 
-const root = ReactDOM.createRoot(
-  document.getElementById("root") as HTMLElement
-);
-root.render(
+ReactDOM.render(
   <React.StrictMode>
-    <div>
-      <Cardapio />
-    </div>
-  </React.StrictMode>
+    <Cardapio />
+  </React.StrictMode>,
+  document.getElementById('root')
 );
